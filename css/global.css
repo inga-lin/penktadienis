@@ -1,3 +1,14 @@
 :root{
-    
+    font-size: 16px; 
+}
+
+.navbar {
+    transition: width 100ms ease;
+}
+.navbar:hover {
+    width: 200px;
+}
+
+.navbar:hover a {
+    display: none;
 }
