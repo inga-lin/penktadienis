@@ -1,0 +1,20 @@
+{
+  "name": "penktadienis",
+  "version": "1.0.0",
+  "description": "Penktadienio isukis",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --port=3000 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS"
+  ],
+  "author": "Inga",
+  "license": "ISC",
+  "dependencies": {
+    "D": "^1.0.0",
+    "dead-server": "^1.0.6"
+  }
+}
