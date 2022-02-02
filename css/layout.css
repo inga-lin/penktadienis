@@ -8,26 +8,29 @@ body * {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline-block;
-    width: 100vw;
+    /*display: inline-block;*/
+    position: relative;
+    max-width: 100vw;
     height: 100vh;
 }
 
 .navbar {
-    background-color: red;
-    float: left;
-    width: 206px;
+    background-color: #F7F6FF;;
+    position: absolute;
+    /*float: left;*/
+    width: 100px;
     height: 100vh;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
 }
 
 .logo {
-    /*display: inline-block;*/
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
     width: 100%;
     height: 57px;
     float: left;
+    
 }
 
 .logo > .logo-img {
@@ -38,8 +41,17 @@ body {
     width: 68px;
     height: 34px;
 }
-
+/*
 .logo > .logo-line {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.logo > .logo-line2 {
     margin-top: 40px;
     margin-bottom: 20px;
     position: absolute;
@@ -48,12 +60,22 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/*.logo:hover > .logo-line2 {
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
 a {
     text-decoration: none;
     color: #C4C4C4;
 }
 
-.home > a {
+.navbar >.home > a {
     position: absolute;
     color: #02577A;
     text-align: center;
@@ -62,19 +84,27 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.home > img {
+.home:hover > img {
     position: absolute;
     top: 15px;
     right: 150px;
 }
 
 .home {
-    margin: 10px 20px;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    height: 57px;
+    float: left;
+    /*margin: 10px 20px;
     width: 186px;
     height: 57px;
     float: left;
-    position: relative;
-    background: #209120;
+    position: relative;*/
+}
+
+.home:hover {
+    background: #FFFFFF;
     border-radius: 25px 0px 0px 25px;
 }
 
@@ -86,6 +116,11 @@ a {
     float: left;
 }
 
+.calendar:hover {
+    background: #FFFFFF;
+    border-radius: 25px 0px 0px 25px;
+}
+
 .calendar > a {
     position: absolute;
     text-align: center;
@@ -95,10 +130,14 @@ a {
     min-width: 50px;
 }
 
-.calendar > img {
+.calendar:hover > img {
     position: absolute;
     top: 15px;
     right: 150px;
+}
+
+.calendar:hover img , .calendar:hover a {
+    filter: brightness(40%);
 }
 
 .fe {
@@ -109,6 +148,11 @@ a {
     float: left;
 }
 
+.fe:hover {
+    background: #FFFFFF;
+    border-radius: 25px 0px 0px 25px;
+}
+
 .fe > a {
     position: absolute;
     text-align: left;
@@ -117,10 +161,14 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.fe > img {
+.fe:hover > img {
     position: absolute;
     top: 15px;
     right: 150px;
+}
+
+.fe:hover > img , .fe:hover a {
+    filter: brightness(40%);
 }
 
 .games {
@@ -132,6 +180,12 @@ a {
     margin: 0;
 }
 
+.games:hover {
+    background: #FFFFFF;
+    border-radius: 25px 0px 0px 25px;
+
+}
+
 .games > a {
     position: absolute;
     text-align: left;
@@ -140,20 +194,46 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.games > img {
+.games > a {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.games:hover > img {
     position: absolute;
     top: 15px;
     right: 140px;
 }
+
+.games:hover > img , .games:hover a {
+    filter: brightness(40%);
+}
+
 .content {
-    float: left;
     background-color: #E5E5E5;
-    width: 86%;
+    width:100%;
     height: 100vh;
 }
 
-footer{
-   bottom: 0;
+footer {
    position: absolute;
-   
+   bottom: 10px;
+   margin-top: 11px;
+   width: 346px;
+   margin:  0 calc(50% - 173px);
+   border-top: 1px solid #02577A;
+}
+
+footer > p {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 13px;
+    padding-top: 6px;
+    text-align: center;
+    color: #02577A;
+
 }

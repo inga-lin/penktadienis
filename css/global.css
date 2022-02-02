@@ -2,13 +2,14 @@
     font-size: 16px; 
 }
 
-.navbar {
-    transition: width 100ms ease;
-}
 .navbar:hover {
-    width: 200px;
+    width: 206px;
+}
+
+.navbar a {
+    display: none;
 }
 
 .navbar:hover a {
-    display: none;
+    display: block;
 }
