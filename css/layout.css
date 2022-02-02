@@ -90,6 +90,11 @@ a {
     right: 150px;
 }
 
+.home > img {
+    padding-left: 17px;
+    padding-top: 4px;
+}
+
 .home {
     padding: 10px 20px;
     position: relative;
@@ -136,6 +141,12 @@ a {
     right: 150px;
 }
 
+.calendar > img {
+    padding-left: 17px;
+    padding-top: 4px;
+}
+
+
 .calendar:hover img , .calendar:hover a {
     filter: brightness(40%);
 }
@@ -165,6 +176,11 @@ a {
     position: absolute;
     top: 15px;
     right: 150px;
+}
+
+.fe > img {
+    padding-left: 18px;
+    padding-top: 5px;
 }
 
 .fe:hover > img , .fe:hover a {
@@ -208,8 +224,13 @@ a {
     right: 140px;
 }
 
+.games > img {
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
 .games:hover > img , .games:hover a {
-    filter: brightness(40%);
+    filter: brightness(40%); /*uzvedus pelyte pasikeicia spalva*/
 }
 
 .content {
