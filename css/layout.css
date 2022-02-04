@@ -335,71 +335,6 @@ footer > p {
         margin: 0 calc(50% - 500px);
     }
 }*/
-/*
-@media (max-width: 700px){
-    .content{
-        max-width: 500px;
-        margin-left: calc(50% - 250px);
-    }
-    .content > .cont {
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 0px;
-        padding-top: 30px;
-        padding-bottom: 0px;
-    }
-
-    .content > .cont > .greetings {
-        max-width: 450px;
-        height: 80px;
-        padding-top: 20px;
-    }
-
-    .content > .cont > .greetings > h1{
-        font-size: 20px;
-        margin-left: 0px;
-    }
-
-    .bacgraund-foto {
-        display: none;
-    }
-
-    .bacgraund-foto2 {
-        width: 600px;
-        height: 300px;
-        background-image: url(../assets/foto-mobile.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin:0 calc(50% - 150px);
-    }
-
-    .content > .cont > .data {
-        width: 460px;
-        height: 80px;
-        padding: 10px; 
-    }
-
-    .hours , .full-data{
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .quote {
-        width: 450px;
-        height: 90px;
-        margin-left: 135px;
-        margin-top: 20px;
-    }
-
-    footer {
-        width: 350px;
-        margin-left: 135px;
-    }
-
-}*/
 
 @media (max-width: 700px){
     .content{
@@ -443,7 +378,7 @@ footer > p {
     }
 
     .content > .cont > .data {
-        width: 460px;
+        width: 450px;
         height: 80px;
         padding: 10px; 
     }
@@ -510,7 +445,6 @@ footer > p {
     .content > .cont > .data {
         width: 260px;
         height: 80px;
-        padding: 10px; 
     }
 
     .hours , .full-data{
