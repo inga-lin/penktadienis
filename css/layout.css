@@ -8,7 +8,7 @@ body * {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline-block;/**/
+    display: inline-block;
     position: relative;
     max-width: 100vw;
     height: 100vh;
@@ -18,7 +18,7 @@ body {
 .navbar {
     background-color: #F7F6FF;;
     position: absolute;
-    float: left;/**/
+    float: left;
     width: 100px;
     height: 100vh;
     box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
@@ -42,15 +42,6 @@ body {
     width: 68px;
     height: 34px;
 }
-/*
-.logo > .logo-line {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
 
 .logo > .logo-line2 {
     margin-top: 40px;
@@ -60,16 +51,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-/*.logo:hover > .logo-line2 {
-    width: 200px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
 
 a {
     text-decoration: none;
@@ -102,11 +83,6 @@ a {
     width: 100%;
     height: 57px;
     float: left;
-    /*margin: 10px 20px;
-    width: 186px;
-    height: 57px;
-    float: left;
-    position: relative;*/
 }
 
 .home:hover {
