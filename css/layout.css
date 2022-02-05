@@ -222,7 +222,8 @@ a {
 .content > .cont {
     display: flex;
     padding-left: 200px;
-    gap: 400px;
+    justify-content: space-around;
+    /*gap: 400px;*/
     padding-top: 30px;
     padding-bottom: 20px;
 }
@@ -303,16 +304,13 @@ footer > p {
     color: #02577A;
 }
 
-/*content
+/*content*/
 
-@media (max-width: 1300px){
-    .content{
-        width: 1000px;
-        margin: 0 calc(50% - 500px);
-    }
-}*/
+
+/*content*/
 
 @media (max-width: 700px){
+    
     .content{
         max-width: 500px;
         margin-left: calc(50% - 250px);
@@ -379,9 +377,15 @@ footer > p {
 }
 
 @media (max-width: 400px){
+    /*cia max-height prirasiau*/
     .content{
         width: 400px;
+        max-height: 100vh;
         margin-left: 0px;
+    }
+
+    .navbar {
+        max-height: 100vh;
     }
     .content > .cont {
         display: flex;
