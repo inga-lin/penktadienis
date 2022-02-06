@@ -1,0 +1,234 @@
+/*content*/
+
+.content {
+    background-color: #E5E5E5;
+    width:1550px;
+    height: 100vh;
+    float: right;
+}
+
+.content > .cont {
+    display: flex;
+    padding-left: 200px;
+    justify-content: space-around;
+    /*gap: 400px;*/
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.content > .cont > .greetings {
+    width: 341px;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.content > .cont > .greetings > h1{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.content > .cont > .data {
+    width: 516px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 25px 25px 25px 25px;
+    padding: 10px 90px; 
+}
+
+.content > .cont > .data > .hours{
+    color: #02577A;;
+}
+
+.hours , .full-data{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.bacgraund-foto{
+    width: 1430px;
+    height: 450px;
+    background-image: url(../assets/pagrindine-foto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: crimson;
+    margin-left: 115px;
+}
+
+.quote {
+    width: 898px;
+    height: 70px;
+    margin: 0 calc(50% - 449px);
+    border: 2px solid #02577A;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quote > p {
+    font-size: 16px;
+    padding-top: 25px;
+}
+
+footer {
+   position: absolute;
+   bottom: 10px;
+   margin-top: 11px;
+   width: 346px;
+   margin:  0 calc(50% - 173px);
+   border-top: 1px solid #02577A;
+}
+
+footer > p {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 13px;
+    padding-top: 6px;
+    text-align: center;
+    color: #02577A;
+}
+
+/*content*/
+
+
+/*content*/
+
+@media (max-width: 700px){
+    
+    .content{
+        max-width: 500px;
+        margin-left: calc(50% - 250px);
+    }
+    .content > .cont {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .content > .cont > .greetings {
+        max-width: 450px;
+        height: 80px;
+        padding-top: 20px;
+    }
+
+    .content > .cont > .greetings > h1{
+        font-size: 20px;
+        margin-left: -50px;
+    }
+
+    .bacgraund-foto {
+        display: none;
+    }
+
+    .bacgraund-foto2 {
+        width: 600px;
+        height: 300px;
+        background-image: url(../assets/foto-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin:0 calc(50% - 150px);
+    }
+
+    .content > .cont > .data {
+        width: 450px;
+        height: 80px;
+        padding: 10px; 
+    }
+
+    .hours , .full-data{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .quote {
+        width: 450px;
+        height: 90px;
+        margin-left: 170px;
+        margin-top: 20px;
+        /*margin : 0 calc(50% - 225px);*/
+    }
+
+    footer {
+        width: 350px;
+        margin-left: 220px;
+    }
+
+}
+
+@media (max-width: 400px){
+    /*cia max-height prirasiau*/
+    .content{
+        width: 400px;
+        max-height: 100vh;
+        margin-left: 0px;
+    }
+
+    .navbar {
+        max-height: 100vh;
+    }
+    .content > .cont {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 100px;
+        gap: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin-left: 30px;
+    }
+
+    .content > .cont > .greetings {
+        width: 250px;
+        height: 80px;
+        padding-top: 20px;
+    }
+
+    .content > .cont > .greetings > h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .bacgraund-foto {
+        display: none;
+    }
+
+    .bacgraund-foto2 {
+        width: 280px;
+        height: 250px;
+        background-image: url(../assets/foto-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 123px;
+    }
+
+    .content > .cont > .data {
+        width: 260px;
+        height: 80px;
+    }
+
+    .hours , .full-data{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .quote {
+        width: 250px;
+        height: 90px;
+        margin-left: 135px;
+        margin-top: 20px;
+    }
+
+    footer {
+        width: 250px;
+        margin-left: 135px;
+    }
+
+}
