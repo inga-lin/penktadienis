@@ -33,7 +33,6 @@ body {
     width: 100%;
     height: 57px;
     float: left;
-    
 }
 
 .logo > .logo-img {
@@ -218,9 +217,7 @@ a {
     float: left;
     margin-left: 100px; 
     width: calc(100vw - 100px);/*-navbar ploti*/
-    /*cia*/
     min-height: 100vh;
-    /*background-color: #E5E5E5;*/
 }
 
 .content > .cont {
@@ -236,7 +233,7 @@ a {
     padding-top: 20px;
 }
 
-.content > .cont > .greetings > h1{
+.content > .cont > .greetings > h1 {
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
@@ -250,17 +247,17 @@ a {
     padding: 10px 90px; 
 }
 
-.content > .cont > .data > .hours{
+.content > .cont > .data > .hours {
     color: #02577A;;
 }
 
-.hours , .full-data{
+.hours , .full-data {
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
 }
 
-.bacgraund-foto{
+.bacgraund-foto {
     width: 100%;
     height: 450px;
     background-image: url(../assets/pagrindine-foto.png);
@@ -305,11 +302,12 @@ footer {
     color: #02577A;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
     .bacgraund-foto{
         margin-bottom: 20px;
         height: 400px;
     }
+
     .content > .cont {
         max-width: 100%;
         max-height: 100vh;
@@ -328,7 +326,7 @@ footer {
         padding-top: 10px;
     }
 
-    .content > .cont > .greetings > h1{
+    .content > .cont > .greetings > h1 {
         font-size: 30px;
     }
 
@@ -351,8 +349,8 @@ footer {
     }
 }
 
-@media (max-width: 800px){
-    .content > .cont{
+@media (max-width: 800px) {
+    .content > .cont {
         max-width: 100%;
         max-height: 100vh;
     }
@@ -377,35 +375,27 @@ footer {
         width: 400px;
     }
 }
-/*
-@media (max-width: 690px){
-    .content > .cont{
-        max-width: 100%;
-        max-height: 100vh;
+
+@media  (max-height: 450px){ /*pavertus ekrana gerai atrodo*/
+    footer {
+        margin-top: 300px;
+        
     }
-
-    .bacgraund-foto {
-        display: none;
+    .quote {
+        margin-bottom: 60px;
     }
+}
 
-    .bacgraund-foto2 {
-        width: 100%;
-        height: 100px;
-        background-image: url(../assets/foto-mobile.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-bottom: 40px;
-    }
-
-}*/
-
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .quote {
         width: 230px;
         height: 80px;
         margin-top: 10px; /*nepasidaro tarpas*/
         margin : 0 calc(50% - 115px);
+    }
+
+    .quote p {
+        padding: 13px;
     }
 
     footer {
@@ -442,7 +432,7 @@ footer {
         
     }
 
-    .content > .cont > .greetings > h1{
+    .content > .cont > .greetings > h1 {
         font-size: 20px;
     }
 
@@ -456,18 +446,19 @@ footer {
         font-size: 20px;
         line-height: 30px;
     }
-
-
-
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
     footer {
         width: 200px;
         margin:  0 calc(50% - 100px);
     }
 
-    .bacgraund-foto2{
+    .quote p {
+        padding: 13px;
+    }
+
+    .bacgraund-foto2 {
         height: 300px;
         margin-bottom: 30px;
     }
