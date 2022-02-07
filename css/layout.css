@@ -16,8 +16,9 @@ body {
 }
 
 .navbar {
+    position: fixed;
     background-color: #F7F6FF;;
-    position: absolute;
+    /*position: absolute;*/
     float: left;
     width: 100px;
     height: 100vh;
@@ -217,7 +218,8 @@ a {
     float: left;
     margin-left: 100px; 
     width: calc(100vw - 100px);/*-navbar ploti*/
-    height: 100vh;
+    /*cia*/
+    min-height: 100vh;
     /*background-color: #E5E5E5;*/
 }
 
