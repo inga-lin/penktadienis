@@ -284,9 +284,9 @@ a {
 }
 
 footer {
-    position: absolute;
+   position: absolute;
     bottom: 10px;
-    margin-top: 11px;
+    margin-top: 50px;
     width: 346px;
     margin:  0 calc(50% - 173px);
     border-top: 1px solid #02577A;
@@ -376,10 +376,9 @@ footer {
     }
 }
 
-@media  (max-height: 450px){ /*pavertus ekrana gerai atrodo*/
+@media  (max-height: 420px){ /*pavertus ekrana gerai atrodo*/
     footer {
-        margin-top: 300px;
-        
+        margin-top: 50px;
     }
     .quote {
         margin-bottom: 60px;
@@ -457,7 +456,7 @@ footer {
     .quote p {
         padding: 13px;
     }
-
+    
     .bacgraund-foto2 {
         height: 300px;
         margin-bottom: 30px;
