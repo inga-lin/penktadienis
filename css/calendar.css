@@ -1,0 +1,337 @@
+.red-color {
+    background-color: #FC0000;
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.yellow-color {
+    background-color: #FCE300;
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.green-color {
+    background-color: #51FC00;
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.calandar-footer {
+    width: 100vw;
+    margin-left: 0px;
+    border: none;
+    padding-left: 100px;
+    bottom: 5px;
+}
+
+.calandar-footer > p {
+    width: 346px;
+    border-top: 1px solid #02577A;
+    margin-left: calc(50% - 173px);
+}
+
+.plus {
+    margin-left: 100px;
+}
+
+.plus > p {
+    color: white;
+    border: 2px solid #02577A;
+    background-color: #02577A;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.plus > p:hover {
+    color: #02577A;
+    background-color: white;
+}
+
+/* calandar */
+.calendar-content {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.calendar-scss {
+    display: grid;
+    gap: 30px;
+    width: 40%;
+    margin-left: 100px;
+}
+
+.scss , .react, .php{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.s-colum {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+
+.react img , .php img, .scss img {
+    height: 30px;
+}
+
+.s-colum > h1 {
+    font-size: 25px;
+}
+
+.s-colum > p {
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+/* calandar days */
+.weekdays , .days1 , .manths {
+    display: flex;
+}
+
+.calandar {
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    gap: 20px;
+    padding: 30px;
+}
+
+.manths {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.manths > h1 {
+    font-size: 25px;
+}
+.manths > a {
+    margin-top: 8px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.weekdays {
+    border-bottom: 1px solid #C4C4C4;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weekdays, .silver {
+    color: #C4C4C4;
+}
+
+.days1 {
+    font-weight: bold;
+}
+
+.days1 > li {
+    width: 100%;
+    text-align: center;
+}
+
+.days1 > li:hover {
+    color: white;
+    background-color: #02577A;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 1150px){
+    .calendar-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .calendar-scss {
+        width: 500px;
+        margin-left: calc(50% - 220px);
+    }
+
+    .calandar {
+        width: 500px;
+        margin-left: calc(50% - 220px);
+    }
+
+    .plus > p {
+        margin-left: auto;
+    }
+
+    body {
+        position: relative;
+    }
+    
+    .calandar-footer {
+        position: relative;
+        bottom: 10px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .calendar-scss {
+        width: 450px;
+        margin-left: calc(50% - 175px);
+    }
+
+    .calandar {
+        width: 450px;
+        margin-left: calc(50% - 175px);
+        
+    }
+}
+
+@media (max-width: 600px){
+    .calendar-scss {
+        width: 400px;
+        margin-left: calc(50% - 150px);
+        gap: 20px;
+    }
+
+    .calandar {
+        width: 400px;
+        margin-left: calc(50% - 150px);
+        padding: 10px;
+        
+    }
+
+    li {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .calendar-content {
+        gap: 20px;
+    }
+
+    .red-color {
+        margin-top: 0;
+        height: 10px;
+    }
+    
+    .yellow-color {
+        margin-top: 0;
+        height: 10px;
+    }
+    
+    .green-color {
+        margin-top: 0;
+        height: 10px;
+    }
+
+    .s-colum{
+        gap: 5px;
+    }
+
+    .scss, .react, .php {
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 550px){
+    .calendar-scss {
+        width: 350px;
+        margin-left: calc(50% - 125px);
+    }
+
+    .calandar {
+        width: 350px;
+        margin-left: calc(50% - 125px);
+    }
+
+    .calandar-footer > p {
+        width: 250px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .calendar-scss {
+        width: 300px;
+        margin-left: calc(50% - 100px);
+    }
+
+    .calandar {
+        width: 300px;
+        margin-left: calc(50% - 100px);
+        
+    }
+}
+
+@media (max-width: 450px){
+    .calendar-scss {
+        width: 280px;
+        margin-left: calc(50% - 90px);
+    }
+
+    .calandar {
+        width: 280px;
+        margin-left: calc(50% - 90px);
+        
+    }
+
+    .calandar-footer > p {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 380px){
+    .calendar-scss {
+        width: 240px;
+        margin-left: calc(50% - 70px);
+    }
+
+    .calandar {
+        width: 240px;
+        margin-left: calc(50% - 70px);
+    }
+
+    li {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .s-colum > h1 {
+        font-size: 20px;
+    }
+
+    .s-colum > p {
+        font-size: 15px;
+    }
+
+    .react img , .php img, .scss img {
+        height: 20px;
+    }
+
+}
