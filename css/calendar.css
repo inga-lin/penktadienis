@@ -1,3 +1,8 @@
+.calendar-color {
+    background: #FFFFFF;
+    border-radius: 25px 0px 0px 25px;
+}
+
 .red-color {
     background-color: #FC0000;
     width: 40%;
@@ -135,7 +140,7 @@
 
 li {
     list-style-type: none;
-    padding: 10px;
+    padding: 13px;
     font-size: 25px;
 }
 
@@ -156,8 +161,11 @@ li {
 }
 
 .days1 > li {
-    width: 100%;
+    /*width: 100%;*/
     text-align: center;
+    height: 56px;/**/
+    width: 90%;/**/
+    margin: 2px;/**/
 }
 
 .days1 > li:hover {
@@ -165,7 +173,9 @@ li {
     background-color: #02577A;
     border-radius: 50%;
     cursor: pointer;
+    
 }
+
 
 @media (max-width: 1150px){
     .calendar-content {
@@ -185,7 +195,8 @@ li {
     }
 
     .plus > p {
-        margin-left: auto;
+        /*margin-left: auto;*//**/
+       margin-left: calc(50% - -170px); /**/
     }
 
     body {
@@ -209,6 +220,12 @@ li {
         width: 450px;
         margin-left: calc(50% - 175px);
         
+    }
+    .days1 > li { /**/
+        width: 100%;
+        text-align: center;
+        height: auto;/**/
+        margin: 0px;/**/
     }
 }
 
@@ -257,6 +274,17 @@ li {
     .scss, .react, .php {
         padding: 10px 20px;
     }
+
+    .days1 > li {
+        text-align: center;
+        height: auto;/**/
+        width: 100%;/**/
+        padding: 14px;/**/
+    }
+
+    .plus > p {
+       margin-left: calc(50% - -140px); /**/
+    }
 }
 @media (max-width: 550px){
     .calendar-scss {
@@ -273,6 +301,15 @@ li {
         width: 250px;
         margin: auto;
     }
+
+    .days1 > li {
+        width: 100%;/**/
+        padding: 10px;/**/
+    }
+
+    .plus > p {
+        margin-left: calc(50% - -120px); /**/
+     }
 }
 
 @media (max-width: 500px){
@@ -286,7 +323,17 @@ li {
         margin-left: calc(50% - 100px);
         
     }
+
+    .days1 > li {
+        padding: 6px;/**/
+        margin: 1px;
+    }
+
+    .plus > p {
+        margin-left: calc(50% - -90px); /**/
+     }
 }
+
 
 @media (max-width: 450px){
     .calendar-scss {
@@ -304,6 +351,10 @@ li {
         width: 200px;
         margin: auto;
     }
+
+    .plus > p {
+        margin-left: calc(50% - -80px); /**/
+     }
 }
 
 @media (max-width: 380px){
@@ -333,6 +384,9 @@ li {
     .react img , .php img, .scss img {
         height: 20px;
     }
+    .plus > p {
+        margin-left: calc(50% - -60px); /**/
+     }
 
 }
 
@@ -341,7 +395,7 @@ li {
 }
 
 .home > img {
-    color: #C4C4C4;
+    color: #e03333;
 }
 
 .calendar-color {
