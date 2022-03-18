@@ -256,12 +256,18 @@ li {
         margin-left: calc(50% - 175px);
         
     }
-    .days1 > li { /**/
-        width: 100%;
-        text-align: center;
-        height: auto;/**/
-        margin: 0px;/**/
+
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(350px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
 }
 
 @media (max-width: 600px){
@@ -337,14 +343,15 @@ li {
         margin: auto;
     }
 
-    .days1 > li {
-        width: 100%;/**/
-        padding: 10px;/**/
-    }
-
     .plus > p {
         margin-left: calc(50% - -120px); /**/
-     }
+    }
+
+    .days div {
+        font-size: 22px;        
+        margin: 2px;
+        width: calc(300px / 7 );
+    }
 }
 
 @media (max-width: 500px){
@@ -359,9 +366,11 @@ li {
         
     }
 
-    .days1 > li {
-        padding: 6px;/**/
-        margin: 1px;
+    .days div {
+        font-size: 22px;        
+        margin: 2px;
+        width: calc(250px / 7 );
+        height: 38px;
     }
 
     .plus > p {
@@ -389,7 +398,14 @@ li {
 
     .plus > p {
         margin-left: calc(50% - -80px); /**/
-     }
+    }
+
+    .days div {
+        font-size: 20px;        
+        margin: 2px;
+        width: calc(230px / 7 );
+        height: 38px;
+    }
 }
 
 @media (max-width: 380px){
@@ -421,7 +437,14 @@ li {
     }
     .plus > p {
         margin-left: calc(50% - -60px); /**/
-     }
+    }
+
+    .days div {
+        font-size: 18px;        
+        margin: 2px;
+        width: calc(180px / 7 );
+        height: 30px;
+    }
 
 }
 
