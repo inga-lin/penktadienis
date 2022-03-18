@@ -155,20 +155,55 @@ li {
 .weekdays, .silver {
     color: #C4C4C4;
 }
-
+/*
 .days1 {
     font-weight: bold;
 }
 
 .days1 > li {
-    /*width: 100%;*/
     text-align: center;
-    height: 56px;/**/
-    width: 90%;/**/
-    margin: 2px;/**/
+    height: 56px;
+    width: 90%;
+    margin: 2px;
 }
 
 .days1 > li:hover {
+    color: white;
+    background-color: #02577A;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}*/
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+
+.days div {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2px;
+    width: calc(400px / 7 );
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.praejusi-data, .ateinanti-data {
+    color: #C4C4C4;
+}
+
+.siandiena {
+    color: white;
+    background-color: #02577A;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.days > div:hover {
     color: white;
     background-color: #02577A;
     border-radius: 50%;
