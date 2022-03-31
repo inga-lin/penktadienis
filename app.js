@@ -4,7 +4,7 @@ const date = new Date();//sukuriam siandienine data
 const visasKalendorius = () => {
     //const month = date.getMonth();// menesi isgaunam, tik skaiciuoja cia nuo 0menesius o ne nuo 1
     //console.log(month);
-    date.setDate(1);
+    date.setDate(7); //cia keiciam seno menesio pasibaigimo dienas////
     //console.log(date.getDate());
     //date.setMonth(2);//sio menesio pasirinkimas
 
@@ -16,7 +16,7 @@ const visasKalendorius = () => {
     const pirmosDienosIndeksas = date.getDay();
     const ateinantiData = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
 
-    const kitaDiena = 7 - ateinantiData -1;
+    const kitaDiena = 7 - ateinantiData ;// cia keiciam ateinancio men dienas///// galim rasyt tarkim -1, -2
     const months = ['January', 'February','March','April','May','June','July','August','September','October','November','December',];
     document.querySelector('.manths h1').innerHTML = months[date.getMonth()]; //gausim einama menesi. jei butu months[1]- gautumem vasari
 
@@ -46,12 +46,12 @@ const visasKalendorius = () => {
 
 
 document.querySelector('.atgal').addEventListener('click', () => {
-    date.setMonth(date.getMonth()-1);
+    date.setMonth(date.getMonth() - 1);
     visasKalendorius();
 });
 
 document.querySelector('.pirmyn').addEventListener('click', () => {
-    date.setMonth(date.getMonth()+1);
+    date.setMonth(date.getMonth() + 1);
     visasKalendorius();
 });
 

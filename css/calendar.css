@@ -144,36 +144,33 @@ li {
     font-size: 25px;
 }
 
-.weekdays {
+/*.weekdays {
     border-bottom: 1px solid #C4C4C4;
     margin-left: 5px;
     margin-right: 5px;
     display: flex;
     justify-content: space-evenly;
+}*/
+
+.weekdays {/**/
+    width: 100%;
+    height: 30px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays li{ /**/
+    letter-spacing: 0.1rem;
+    width: calc(500px / 7 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .weekdays, .silver {
     color: #C4C4C4;
 }
-/*
-.days1 {
-    font-weight: bold;
-}
-
-.days1 > li {
-    text-align: center;
-    height: 56px;
-    width: 90%;
-    margin: 2px;
-}
-
-.days1 > li:hover {
-    color: white;
-    background-color: #02577A;
-    border-radius: 50%;
-    cursor: pointer;
-    
-}*/
 
 .days {
     width: 100%;
@@ -186,7 +183,7 @@ li {
     font-weight: bold;
     font-size: 25px;
     margin: 2px;
-    width: calc(400px / 7 );
+    width: calc(500px / 7 );
     height: 60px;
     display: flex;
     justify-content: center;
@@ -208,8 +205,93 @@ li {
     background-color: #02577A;
     border-radius: 50%;
     cursor: pointer;
+    transition: max-width 0.8s ease-in 0s;
     
 }
+@media (max-width: 1450px){
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(450px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;  
+    }
+}
+
+@media (max-width: 1350px){
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(430px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px; 
+    }
+}
+
+@media (max-width: 1300px){
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(400px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px; 
+    }
+
+    .weekdays li{ /**/
+        letter-spacing: 0.1rem;
+        width: calc(430px / 7 );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1250px){
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(380px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px; 
+    }
+    .weekdays li{ /**/
+        width: calc(410px / 7 );
+    }
+}
+
+@media (max-width: 1200px){
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(370px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weekdays li{ /**/
+        width: calc(400px / 7 );
+    }
+}
+
 
 
 @media (max-width: 1150px){
@@ -242,6 +324,19 @@ li {
         position: relative;
         bottom: 10px;
     }
+    .days div {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 2px;
+        width: calc(400px / 7 );
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weekdays li{ /**/
+        width: calc(430px / 7 );
+    }
 
 }
 
@@ -266,6 +361,9 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .weekdays li{ /**/
+        width: calc(380px / 7 );
     }
 
 }
@@ -373,6 +471,10 @@ li {
         height: 38px;
     }
 
+    .weekdays li{ /**/
+        width: calc(280px / 7 );
+    }
+
     .plus > p {
         margin-left: calc(50% - -90px); /**/
      }
@@ -406,6 +508,14 @@ li {
         width: calc(230px / 7 );
         height: 38px;
     }
+    .weekdays li{ /**/
+        width: calc(260px / 7 );
+    }
+
+    li {
+        
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 380px){
@@ -417,11 +527,12 @@ li {
     .calandar {
         width: 240px;
         margin-left: calc(50% - 70px);
+        gap: 1px;
     }
 
     li {
         padding: 5px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .s-colum > h1 {
@@ -444,6 +555,10 @@ li {
         margin: 2px;
         width: calc(180px / 7 );
         height: 30px;
+    }
+
+    .weekdays li{ /**/
+        width: calc(210px / 7 );
     }
 
 }

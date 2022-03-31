@@ -4,6 +4,7 @@
 
 .navbar:hover {
     width: 206px;
+    transition: max-width 0.4s ease-in 0s; 
 }
 
 .navbar a {
@@ -12,4 +13,5 @@
 
 .navbar:hover a {
     display: block;
+    transition: max-width 0.4s ease-in 0s; 
 }
