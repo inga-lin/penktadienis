@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/calendar.css">
     <link rel="stylesheet" href="./css/fe.css">
-    <script src="./app.js" defer></script>
+ 
+    <script src="./fe.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -56,6 +61,54 @@
                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe assumenda ullam magni, voluptas reiciendis ipsa ipsum blanditiis eligendi quam rerum, laboriosam repellendus illo quis atque ratione sed sit enim!</div>
             </details>
         </div>
+        <div class="carusel">
+              <div id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+
+                    <div id="slides">
+                       <div id="overflow">
+                          <div class="inner">
+                             <div class="slide slide_1">
+                                <div class="slide-content">
+                                  
+                                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero dolor tempore aliquid dolores sint explicabo reiciendis laboriosam. Saepe voluptas, hic, ea facilis fuga dolorem corrupti laborum illo voluptate nobis tempore.</p>
+                                </div>
+                             </div>
+                             <div class="slide slide_2">
+                                <div class="slide-content">
+                                  
+                                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis repellendus tenetur laudantium qui ipsum provident dicta autem, maiores quo ab nobis. Officia voluptatum officiis nam nulla quaerat! Necessitatibus, inventore blanditiis!</p>
+                                </div>
+                             </div>
+                             <div class="slide slide_3">
+                                <div class="slide-content">
+                                   
+                                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores praesentium veritatis dolores optio quis omnis debitis. Autem dolor alias nesciunt sit quia doloribus minus cupiditate possimus? Sed tenetur non velit.</p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div id="controls">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                    </div>
+                    <div id="bullets">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                    </div>
+                </div>
+            </div>
+         </div>
+<div class="conteiner">
+    <button id="btn">Select THEME:</button>
+</div>
+        
+
 
     </div>
     <footer class="calandar-footer">

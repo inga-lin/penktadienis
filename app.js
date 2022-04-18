@@ -1,3 +1,40 @@
+ {/*
+ let themeCollor = localStorage.getItem('collor');
+if (themeCollor === null) {
+   localStorage.setItem('collor', 'blue');
+   themeCollor = 'blue';
+}
+document.documentElement.className = themeCollor;
+const btnBlue = document.getElementById('blue');
+const btnGreen = document.getElementById('green');
+
+btnBlue.addEventListener('click', () => {
+    document.documentElement.className = 'blue';
+    localStorage.setItem('collor', 'blue')
+});
+btnGreen.addEventListener('click', () => {
+    document.documentElement.className = 'green';
+    localStorage.setItem('collor', 'green')
+    });
+*/}
+/*
+let themeCollor = localStorage.getItem('collor');
+const button = document.getElementById("btn");
+const body = document.body;
+
+
+const colors = ['green', 'salmon', 'blue', 'purple', 'red'];
+body.style.backgroundColor = colors[0];
+
+button.addEventListener('click', changeBackground); 
+localStorage.setItem('collor', 'green')
+function changeBackground(){
+    const colorsIndex = Math.floor(Math.random()*colors.length)
+    body.style.backgroundColor = colors[colorsIndex]
+}
+
+*/
+
 const date = new Date();//sukuriam siandienine data
 //console.log(date);
 
@@ -45,14 +82,24 @@ const visasKalendorius = () => {
 }
 
 
-document.querySelector('.atgal').addEventListener('click', () => {
+document.querySelector(".prev").addEventListener('click', () => {
     date.setMonth(date.getMonth() - 1);
     visasKalendorius();
+    
 });
 
-document.querySelector('.pirmyn').addEventListener('click', () => {
+document.querySelector(".next").addEventListener('click', () => {
     date.setMonth(date.getMonth() + 1);
     visasKalendorius();
 });
 
+
+
 visasKalendorius();
+
+
+
+
+
+
+
