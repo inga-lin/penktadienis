@@ -18,9 +18,16 @@ function changeBackground(){
     local.setItem('colors', JSON.stringify(colors[colorsIndex]))
 }
 
-setchangeBackground = () => {
+changeBackground = () => {
     let colorsIndex = local.getItem('colors');
     colorsIndex = JSON.parse(colors[colorsIndex]);
 }
 /////
+if (JSON.parse(local.getItem('colors'))){
+    const color = local.getItem('colors')
+    console.log(JSON.parse(color))
+    body.style.backgroundColor = JSON.parse(color)
+    console.log(local.getItem('colors'));
+    //button.addEventListener('click', changeBackground); 
+}
 
